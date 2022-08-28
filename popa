@@ -1,10 +1,14 @@
- class Program
-    {
-        static void Main(string[] args)
-        {
-            int age = 15;
-            string name = "Dasha";
-            Console.WriteLine($"пошли нахуй все с именем {name} вам всем  {age} лет аххахахахаха");
-           
-        }
-    }
+            string name;
+            string age;
+            string work;
+            string zz;
+            Console.Write("Ведите ваше имя: ");
+            name = Console.ReadLine();
+            Console.Write("Ваш возраст: ");
+            age = Console.ReadLine();
+            Console.Write("Вы работаете на: ");
+            work = Console.ReadLine();
+            Console.WriteLine("Ваш знак зодиака:");
+            zz = Console.ReadLine();
+
+            Console.WriteLine("Ваше имя - " + name + ". Вам " + age + " лет. Вы работаете на " + work + ". Ваш знак зодиака -  " + zz + ".");
