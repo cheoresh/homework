@@ -1,0 +1,10 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int age = 15;
+            string name = "Dasha";
+            Console.WriteLine($"пошли нахуй все с именем {name} вам всем  {age} лет аххахахахаха");
+           
+        }
+    }
