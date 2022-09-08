@@ -1,0 +1,17 @@
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "Бабушек";
+            int Time = 10;
+            Console.WriteLine("Сколько людей в очереди");
+            int queue = int.Parse(Console.ReadLine());
+            float timeinQueue = (float)queue * Time / 60;
+            TimeSpan waitingTime = TimeSpan.FromHours(timeinQueue);
+            Console.WriteLine("Вы должны отстоять в очереди {0:hh} часа {0:mm} минут", waitingTime);
+
+        }
+    }
+}
