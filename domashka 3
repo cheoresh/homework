@@ -1,16 +1,7 @@
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+
             int photosCount = 52;
             int countrow = 3;
             int fullRowsCount = photosCount / countrow;
             int toomuchFlowCount = photosCount % countrow;
             Console.WriteLine("Полных рядов " + fullRowsCount);
             Console.WriteLine("Не влезет " + toomuchFlowCount);
-
-        }
-    }
-}
