@@ -1,9 +1,4 @@
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+
             bool EnoughGold;
             int crystalPrice = 2;
             Console.WriteLine("Количество золота:");
@@ -14,8 +9,3 @@ namespace ConsoleApp2
             crystalCount *= Convert.ToInt32(EnoughGold);
             gold -= crystalCount * crystalPrice;
             Console.WriteLine($"Осталось {gold} золота и {crystalCount} кристаллов");
-
-
-        }
-    }
-}
