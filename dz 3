@@ -4,17 +4,21 @@
 В качестве решения ожидается объявленные переменные с необходимыми значениями и вывод необходимых данных основываясь на значениях переменных.
 
 
-
-
+namespace ConsoleApp1
+{
     internal class Program
     {
         static void Main(string[] args)
         {
+ // На экране в специальной зоне выводятся картинки, по 3 в ряд. Всего у пользователя в альбоме 52 картинки.Код должен вывести, сколько полностью заполненных рядов можно будет вывести, и сколько картинок будет сверх меры.
+//В качестве решения ожидается объявленные переменные с необходимыми значениями и вывод необходимых данных основываясь на значениях переменных.
             int picturesCount = 52;
             int picturesCountInRow = 3;
             int rowsCount;
+            int picturesBeyondMeasure;
             rowsCount = picturesCount / picturesCountInRow;
-            Console.WriteLine("Количество рядов: " + rowsCount);
+            picturesBeyondMeasure = picturesCount % picturesCountInRow;
+            Console.WriteLine("Количество заполненных рядов: " + rowsCount + ". Количество картинок сверх меры: " + picturesBeyondMeasure);
         }
     }
 }
