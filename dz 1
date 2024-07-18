@@ -1,0 +1,30 @@
+/Задача:
+Попрактикуйтесь в создании переменных, объявить 10 переменных разных типов.
+Напоминание: переменные именуются с маленькой буквы, если название состоит из нескольких слов, то комбинируем их следующим образом - названиеПеременной.
+Также имя всегда должно отражать суть того, что хранит переменная.
+
+
+        static void Main(string[] args)
+        {
+            string name;
+            int age;
+            bool clubEnter;
+            float sluts;
+            byte b;
+            long dick;
+            double death = 66.6;
+            short man;
+            ulong woman;
+
+
+            Console.WriteLine("Ваше имя:");
+            name = Console.ReadLine();
+            Console.WriteLine("Ваш возраст:");
+            age = Convert.ToInt32(Console.ReadLine());
+            clubEnter = age >= 18;
+
+            Console.WriteLine("Вам " + age + " лет. Ваше имя - " + name + ". Ваш пропуск в клуб: " + clubEnter);
+
+
+
+        }
