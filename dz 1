@@ -4,27 +4,27 @@
 Также имя всегда должно отражать суть того, что хранит переменная.
 
 
+    internal class Program
+    {
         static void Main(string[] args)
         {
             string name;
             int age;
-            bool clubEnter;
+            bool isClubEnter;
             float sluts;
-            byte b;
-            long dick;
-            double death = 66.6;
-            short man;
-            ulong woman;
-
+            byte fpsOnDjPhone = 8;
+            long dickSize = 5;
+            double numberOfDeath = 66.6;
+            short DjHeight = 120;
+            ulong DjSonHeight = 200;
 
             Console.WriteLine("Ваше имя:");
             name = Console.ReadLine();
+
             Console.WriteLine("Ваш возраст:");
             age = Convert.ToInt32(Console.ReadLine());
             clubEnter = age >= 18;
-
-            Console.WriteLine("Вам " + age + " лет. Ваше имя - " + name + ". Ваш пропуск в клуб: " + clubEnter);
-
-
-
+            Console.WriteLine("Вам " + age + " лет. Ваше имя - " + name + ". Ваш пропуск в клуб: " + isClubEnter);
         }
+    }
+}
