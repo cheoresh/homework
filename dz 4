@@ -1,0 +1,23 @@
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //При старте программы пользователь вводит начальное количество золота. Потом ему предлагается купить какое-то количество кристаллов по цене N(задать в программе самому). Пользователь вводит число и его золото конвертируется в кристаллы. Остаток золота и кристаллов выводится на экран.
+
+            bool enoughGold;
+            int crystalPrice = 10;
+            Console.WriteLine("Сколько у вас золота?");
+            int gold = int.Parse(Console.ReadLine());
+            Console.WriteLine("Скока хотите купить кристаллов?");
+            int crystalsCount = int.Parse(Console.ReadLine());
+            enoughGold = gold >= crystalPrice * crystalsCount;
+            crystalsCount *= Convert.ToInt32(enoughGold);
+            gold -= crystalPrice * crystalsCount;
+            Console.WriteLine($"итак поздравляю вы стали бомжом. на вашем счету {gold} золота. Вы сумели купить всего лишь {crystalsCount} кристаллов и вам остается думать как прожить остаток месяца ну вы и лох конечно....");
+
+        }
+    }
+}
