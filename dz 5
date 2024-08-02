@@ -1,0 +1,26 @@
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Задача:
+            //  Легенда:
+            // Вы заходите в поликлинику и видите огромную очередь из старушек, вам нужно рассчитать время ожидания в очереди.Формально:
+            //  Пользователь вводит кол - во людей в очереди.Фиксированное время приема одного человека всегда равно 10 минутам.Пример ввода: Введите кол-во старушек: 14Пример вывода: "Вы должны отстоять в очереди 2 часа и 20 минут."
+
+            int timeForPerson = 10;
+            int grandmothersCount;
+            int minutes;
+            int hours;
+            int waitingTime;
+
+            Console.WriteLine("Скока перед тобой бабок?");
+            grandmothersCount = Convert.ToInt32(Console.ReadLine());
+            waitingTime = grandmothersCount * timeForPerson;
+            hours = waitingTime / 60;
+            minutes = waitingTime % 60;
+            Console.WriteLine($"Вам осталось ждать {hours} часов и {minutes} минут.");
+        }
+    }
+}
