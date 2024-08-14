@@ -1,0 +1,28 @@
+        static void Main(string[] args)
+        {
+            //Задача: Вы задаете вопросы пользователю, по типу "Как вас зовут", "какой ваш знак зодиака" и тд, после чего по данным, которые он ввел формируете небольшой текст о пользователе.
+
+            string name;
+            int age;
+            string zodiacSign;
+            string job;
+            string phoneNumber; 
+
+            Console.WriteLine("Как вас зовут?");
+            name = Console.ReadLine();
+            Console.WriteLine("Сколько вам лет?");
+            age = int.Parse(Console.ReadLine());
+            Console.WriteLine("Какой ваш знак зодиака?");
+            zodiacSign = Console.ReadLine();
+            Console.WriteLine("Кем вы работаете?");
+            job = Console.ReadLine();
+            Console.WriteLine("Введите ваш номер телефона:");
+            phoneNumber = Console.ReadLine(); 
+
+            Console.WriteLine($"Здравствуйте, {name}! " +
+                              $"Вам {age} лет, и ваш знак зодиака — {zodiacSign}. " +
+                              $"Вы работаете {job}. " +
+                              $"Ваш номер телефона: {phoneNumber}.");
+        }
+    }
+}
